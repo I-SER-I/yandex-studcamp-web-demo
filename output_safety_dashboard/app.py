@@ -3,6 +3,8 @@ import pandas as pd
 import random
 import altair as alt
 import datetime
+from streamlit_extras.colored_header import colored_header
+from streamlit_extras.metric_cards import style_metric_cards
 
 def generate_mock_data():
     categories = ["PII", "Shocking Content", "Competitor Ads", "Off-topic"]
@@ -81,8 +83,6 @@ with tabs[0]:
     safe_pct = 100 * filtered["safe"].mean()
     st.progress(int(safe_pct))
     st.markdown(f"### **{safe_pct:.1f}% безопасных ответов**")
-    if safe_pct > 80:
-        rain(emoji="🛡️", font_size=20, falling_speed=5, animation_length="medium")
 
     colored_header(label="Действия модерации", description="Как система реагировала на нарушения", color_name="violet-70")
     actions = filtered["action"].value_counts(normalize=True).reset_index()
