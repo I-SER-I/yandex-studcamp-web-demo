@@ -1,9 +1,9 @@
 import streamlit as st
-from candidates_matching_dashboard.data.mock import generate_mock_candidates
-from candidates_matching_dashboard.ui.sidebar.upload import file_upload_section
-from candidates_matching_dashboard.ui.sidebar.filters import filter_sidebar
-from candidates_matching_dashboard.ui.main.candidate import display_candidate_details
-from candidates_matching_dashboard.ui.main.summary_table import display_summary_table_and_chart
+from data.mock import generate_mock_candidates
+from ui.sidebar.upload import file_upload_section
+from ui.sidebar.filters import filter_sidebar
+from ui.main.candidate import display_candidate_details
+from ui.main.summary_table import display_summary_table_and_chart
 
 st.set_page_config(page_title="Оценка релевантности кандидатов", layout="wide")
 
