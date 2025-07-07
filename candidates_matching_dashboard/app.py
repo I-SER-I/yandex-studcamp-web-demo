@@ -5,7 +5,7 @@ from ui.sidebar.filters import filter_sidebar
 from ui.main.candidate import display_candidate_details
 from ui.main.summary_table import display_summary_table_and_chart
 
-st.set_page_config(page_title="Оценка релевантности кандидатов", layout="wide")
+st.set_page_config(page_title="Оценка релевантности кандидата вакансии", layout="wide")
 
 file_upload_section()
 

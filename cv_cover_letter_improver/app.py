@@ -4,7 +4,7 @@ from data.mock import parse_resume, parse_vacancy, analyze_resume, generate_sugg
     generate_cover_letter, generate_pdf, mock_resume, mock_vacancy, mock_cover_letter, mock_analysis, mock_suggestions
 
 st.set_page_config(page_title="Анализ и генерация резюме", layout="wide")
-st.title("Анализ и генерация резюме + сопроводительное письмо")
+st.title("Генерация сопроводительного письма и оптимизация резюме")
 
 uploaded_resume = st.file_uploader("Загрузите резюме", type=["pdf", "docx", "json"])
 uploaded_vacancy = st.file_uploader("Загрузите вакансию", type=["txt", "json"])
