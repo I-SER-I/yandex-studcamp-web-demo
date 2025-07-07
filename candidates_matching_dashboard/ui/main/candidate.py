@@ -1,16 +1,16 @@
 import streamlit as st
 
 def display_candidate_details(candidate):
-    col1, col2 = st.columns(2)
+    first, second = st.columns(2)
 
-    with col1:
+    with first:
         st.subheader("Совпавшие навыки")
         st.success(", ".join(candidate["matched_skills"]) or "Нет")
 
         st.subheader("Недостающие навыки")
         st.warning(", ".join(candidate["missing_skills"]) or "Нет")
 
-    with col2:
+    with second:
         st.subheader("Пробелы в опыте")
         st.error("\n".join(candidate["experience_gaps"]) or "Нет")
 
