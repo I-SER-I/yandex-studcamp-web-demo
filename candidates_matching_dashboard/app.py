@@ -12,7 +12,7 @@ file_upload_section()
 candidates = generate_mock_candidates()
 filtered, _ = filter_sidebar(candidates)
 
-st.title("📊 Анализ релевантности кандидатов")
+st.title("Анализ релевантности кандидатов")
 
 if not filtered:
     st.warning("Нет подходящих кандидатов по заданным фильтрам.")

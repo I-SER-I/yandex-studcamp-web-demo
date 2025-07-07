@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-TABLE_HEADER = "📋 Обзор всех кандидатов"
-CHART_HEADER = "📈 Сравнительный график matching score"
+TABLE_HEADER = "Обзор всех кандидатов"
+CHART_HEADER = "Сравнительный график matching score"
 CHART_TITLE = "Matching Score по кандидатам"
 
 def display_summary_table_and_chart(candidates):
