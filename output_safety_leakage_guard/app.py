@@ -43,8 +43,8 @@ def generate_mock_data():
 
 
 df = generate_mock_data()
-st.set_page_config(page_title="Leakage Guard Dashboard", layout="wide")
-st.title("Output-Safety & Leakage Guard Dashboard")
+st.set_page_config(page_title="Output-Safety & Leakage Guard", layout="wide")
+st.title("Output-Safety & Leakage Guard")
 
 selected_chat = st.selectbox("Выберите chat_id:", sorted(df["chat_id"].unique()))
 filtered = df[df["chat_id"] == selected_chat]

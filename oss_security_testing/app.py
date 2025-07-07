@@ -4,8 +4,8 @@ import random
 import altair as alt
 from datetime import datetime, timedelta
 
-st.set_page_config(page_title="OSS Security Dashboard", layout="wide")
-st.title("OSS Security Testing Platform")
+st.set_page_config(page_title="OSS Security Testing", layout="wide")
+st.title("OSS Security Testing")
 
 @st.cache_data
 def generate_mock_vulnerabilities():

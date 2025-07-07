@@ -5,14 +5,14 @@ from ui.sidebar.filters import filter_sidebar
 from ui.main.candidate import display_candidate_details
 from ui.main.summary_table import display_summary_table_and_chart
 
-st.set_page_config(page_title="Оценка релевантности кандидата вакансии", layout="wide")
+st.set_page_config(page_title="Генерация сопроводительного письма и оптимизация резюме", layout="wide")
 
 file_upload_section()
 
 candidates = generate_mock_candidates()
 filtered, _ = filter_sidebar(candidates)
 
-st.title("Анализ релевантности кандидатов")
+st.title("Генерация сопроводительного письма и оптимизация резюме")
 
 if not filtered:
     st.warning("Нет подходящих кандидатов по заданным фильтрам.")

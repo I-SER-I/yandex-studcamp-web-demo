@@ -7,7 +7,7 @@ from streamlit_extras.colored_header import colored_header
 import datetime
 
 st.set_page_config(page_title="Anti-Fraud & Prompt-Injection Guard", layout="wide")
-st.title("Anti-Fraud & Prompt-Injection Monitoring Dashboard")
+st.title("Anti-Fraud & Prompt-Injection Guard")
 
 def generate_mock_data():
     categories = ["Spam", "Toxicity", "Prompt Injection"]
